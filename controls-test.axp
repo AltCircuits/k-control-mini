@@ -1,0 +1,248 @@
+<patch-1.0 appVersion="1.0.12">
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_4" x="266" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_3" x="350" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_2" x="434" y="14">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac88" name="analog_1" x="784" y="14">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PA0"/>
+      </attribs>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_1" x="1204" y="42">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_1" x="1358" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PB3"/>
+      </attribs>
+   </obj>
+   <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_9" x="784" y="84">
+      <params>
+         <frac32.s.map name="pitch" value="-20.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/dial p" uuid="44fd18b562e434b3230441681132dbeabb15cdc5" name="dial_1" x="196" y="112">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_2" x="1204" y="112">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_2" x="1358" y="112">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PB4"/>
+      </attribs>
+   </obj>
+   <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_3" x="1204" y="182">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_3" x="1358" y="182">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PB6"/>
+      </attribs>
+   </obj>
+   <obj type="ksoloti/gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac88" name="analog_4" x="28" y="238">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PA3"/>
+      </attribs>
+   </obj>
+   <obj type="ksoloti/gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac88" name="analog_2" x="770" y="280">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PA1"/>
+      </attribs>
+   </obj>
+   <obj type="matroe/midi/monitor plus" uuid="24041ea8-5198-4f61-a350-3f637579244c" name="monitor_1" x="1330" y="294">
+      <params>
+         <bool32.tgl name="ControlChange" value="1"/>
+         <bool32.tgl name="Note" value="1"/>
+         <bool32.tgl name="ProgramChange" value="1"/>
+         <bool32.tgl name="Bend" value="1"/>
+         <bool32.tgl name="PolyPressure" value="1"/>
+         <bool32.tgl name="ChannelPressure" value="1"/>
+         <bool32.tgl name="Clock" value="0"/>
+         <bool32.tgl name="StartStop" value="1"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_10" x="770" y="350">
+      <params>
+         <frac32.s.map name="pitch" value="-30.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/in/digital" uuid="f59f139e8da912742832dc541157f20f30b7ac1c" name="digital_1" x="140" y="462">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PB7"/>
+         <combo attributeName="mode" selection="hi-z"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_1" x="322" y="476">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac88" name="analog_3" x="770" y="504">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PA2"/>
+      </attribs>
+   </obj>
+   <obj type="drj/midi/clock_tx" uuid="92a7e9ec6bae23a35b1204aa14c130af4b3a4793" name="clock_tx_1" x="1316" y="518">
+      <params/>
+      <attribs>
+         <combo attributeName="device" selection="din"/>
+      </attribs>
+   </obj>
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="toggle_1" x="1190" y="532">
+      <params>
+         <bool32.tgl name="b" value="1"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_2" x="322" y="560">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/in/digital" uuid="f59f139e8da912742832dc541157f20f30b7ac1c" name="digital_2" x="154" y="574">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PC1"/>
+         <combo attributeName="mode" selection="hi-z"/>
+      </attribs>
+   </obj>
+   <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_11" x="770" y="574">
+      <params>
+         <frac32.s.map name="pitch" value="-28.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_7" x="434" y="630">
+      <params>
+         <frac32.s.map name="pitch" value="-62.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_5" x="616" y="630">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PB7"/>
+      </attribs>
+   </obj>
+   <obj type="midi/intern/clock" uuid="7f6f35e92d2c29e950af2b3af5cebb2e9e3b778c" name="clock_2" x="1148" y="672">
+      <params>
+         <frac32.u.map name="bpm" value="32.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="midi/out/clock" uuid="12b916e835bb6fc9fa4f2c858d1d1a72d5cf6d08" name="clock_1" x="1316" y="700">
+      <params>
+         <frac32.u.map name="bpm" value="28.0"/>
+      </params>
+      <attribs>
+         <combo attributeName="device" selection="din"/>
+      </attribs>
+   </obj>
+   <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_4" x="616" y="714">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PB8"/>
+      </attribs>
+   </obj>
+   <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_8" x="434" y="756">
+      <params>
+         <frac32.s.map name="pitch" value="-48.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <nets>
+      <net>
+         <source obj="digital_2" outlet="out"/>
+         <dest obj="bool_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sine_8" outlet="wave"/>
+         <dest obj="pwm_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sine_7" outlet="wave"/>
+         <dest obj="pwm_5" inlet="in"/>
+      </net>
+      <net>
+         <source obj="analog_1" outlet="out"/>
+         <dest obj="dial_4" inlet="in"/>
+         <dest obj="*_1" inlet="a"/>
+      </net>
+      <net>
+         <source obj="*_1" outlet="result"/>
+         <dest obj="pwm_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="*_2" outlet="result"/>
+         <dest obj="pwm_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="*_3" outlet="result"/>
+         <dest obj="pwm_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sine_9" outlet="wave"/>
+         <dest obj="*_1" inlet="b"/>
+      </net>
+      <net>
+         <source obj="analog_4" outlet="out"/>
+         <dest obj="dial_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="analog_2" outlet="out"/>
+         <dest obj="*_2" inlet="a"/>
+         <dest obj="dial_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sine_10" outlet="wave"/>
+         <dest obj="*_2" inlet="b"/>
+      </net>
+      <net>
+         <source obj="analog_3" outlet="out"/>
+         <dest obj="*_3" inlet="a"/>
+         <dest obj="dial_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sine_11" outlet="wave"/>
+         <dest obj="*_3" inlet="b"/>
+      </net>
+      <net>
+         <source obj="toggle_1" outlet="o"/>
+         <dest obj="clock_tx_1" inlet="start"/>
+         <dest obj="clock_1" inlet="run"/>
+         <dest obj="clock_2" inlet="run"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>830</x>
+      <y>164</y>
+      <width>1765</width>
+      <height>1017</height>
+   </windowPos>
+</patch-1.0>
