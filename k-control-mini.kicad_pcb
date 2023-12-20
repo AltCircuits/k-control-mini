@@ -864,7 +864,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (layer "F.Cu")
     (tstamp 977ddc73-5bbd-4924-bcf2-2ec63bbec50b)
-    (at 144.266096 87.38)
+    (at 144.266096 87.615)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (property "Sheetfile" "k-control-mini.kicad_sch")
@@ -997,7 +997,7 @@
 
   (footprint "Thonk:729JH-B" (layer "F.Cu")
     (tstamp acb296c2-6d2f-4caa-b4f7-09e1ef83c359)
-    (at 127.326096 115.828)
+    (at 127.580096 122.736)
     (property "Sheetfile" "k-control-mini.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Audio Jack, 4 Poles (TRRS)")
@@ -1034,7 +1034,7 @@
 
   (footprint "Thonk:729JH-B" (layer "F.Cu")
     (tstamp b47d7765-bdad-4fef-8844-ec1dbac12826)
-    (at 129.358096 102.162)
+    (at 127.580096 108.766)
     (property "Sheetfile" "k-control-mini.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Audio Jack, 4 Poles (TRRS)")
@@ -1071,7 +1071,7 @@
 
   (footprint "Thonk:729JH-B" (layer "F.Cu")
     (tstamp c1ec90cd-e8c2-4fdc-ad00-373d0759396f)
-    (at 151.896096 125.703 90)
+    (at 151.896096 124.904 90)
     (property "Sheetfile" "k-control-mini.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Audio Jack, 4 Poles (TRRS)")
@@ -1108,7 +1108,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (layer "F.Cu")
     (tstamp c3178fc5-b886-405c-a93c-54b8e90e832c)
-    (at 144.276096 108.384)
+    (at 144.266096 107.486)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (property "Sheetfile" "k-control-mini.kicad_sch")
@@ -1187,7 +1187,7 @@
 
   (footprint "Thonk:729JH-B" (layer "F.Cu")
     (tstamp ca76f317-7ff6-40b3-a3f7-7c6c1818c21a)
-    (at 167.830096 104.348 180)
+    (at 168.084096 104.348 180)
     (property "Sheetfile" "k-control-mini.kicad_sch")
     (property "Sheetname" "")
     (property "ki_description" "Audio Jack, 4 Poles (TRRS)")
@@ -1465,7 +1465,7 @@
 
   (footprint "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (layer "F.Cu")
     (tstamp ed2db50a-889b-4f0e-ba65-3a4368b60566)
-    (at 144.276096 67.744)
+    (at 144.266096 67.744)
     (descr "Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113")
     (tags "potentiometer vertical 9mm single")
     (property "Sheetfile" "k-control-mini.kicad_sch")
