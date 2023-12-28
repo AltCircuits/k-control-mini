@@ -87,9 +87,9 @@
   (pad "4" thru_hole circle (at 5 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp c3ae33e6-d490-4edb-a7e1-33623c82eab9))
   (pad "L1" thru_hole circle (at 2.5 5.4) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp d5f79a2c-80ae-4275-b09d-c26e6384efc7))
   (pad "L2" thru_hole circle (at 2.5 -0.9) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 3dbf169c-5f32-4303-a63f-30456f9a4eed))
-  (model "C:/Users/epter/Development/PCBs/3d-models/Ass_LED_switch_12x12.stp"
-    (offset (xyz 1 0 0))
-    (scale (xyz 0.5 0.6 0.5))
-    (rotate (xyz -90 0 90))
+  (model "C:/Users/epter/Development/PCBs/3d-models/SW-TL1265.stp"
+    (offset (xyz 2.25 -2.5 0))
+    (scale (xyz 0.9 0.9 0.85))
+    (rotate (xyz 0 0 0))
   )
 )
