@@ -568,7 +568,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "axo-427-core.dsn",
-      "step": "../Library.pretty/ksoloti_core_v04.step",
+      "step": "../ksoloti_core_v04.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
