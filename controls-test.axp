@@ -17,15 +17,19 @@
          <combo attributeName="pin" selection="PA0"/>
       </attribs>
    </obj>
+   <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_1____tmp" x="1358" y="28">
+      <params/>
+      <attribs>
+         <combo attributeName="pin" selection="PA7"/>
+      </attribs>
+   </obj>
    <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_1" x="1204" y="42">
       <params/>
       <attribs/>
    </obj>
-   <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_1" x="1358" y="42">
+   <obj type="ksoloti/gpio/out/pwm led2" uuid="3e491ae7-4200-4b96-95e7-cc42c168d0fe" name="pwm_1" x="1498" y="42">
       <params/>
-      <attribs>
-         <combo attributeName="pin" selection="PA5"/>
-      </attribs>
+      <attribs/>
    </obj>
    <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_9" x="784" y="84">
       <params>
@@ -253,10 +257,6 @@
          <dest obj="*_1" inlet="a"/>
       </net>
       <net>
-         <source obj="*_1" outlet="result"/>
-         <dest obj="pwm_1" inlet="in"/>
-      </net>
-      <net>
          <source obj="*_2" outlet="result"/>
          <dest obj="pwm_2" inlet="in"/>
       </net>
@@ -332,6 +332,11 @@
          <source obj="digital_1" outlet="out"/>
          <dest obj="bool_1" inlet="in"/>
       </net>
+      <net>
+         <source obj="*_1" outlet="result"/>
+         <dest obj="pwm_1____tmp" inlet="in"/>
+         <dest obj="pwm_1" inlet="pc6"/>
+      </net>
    </nets>
    <settings>
       <subpatchmode>polychannel</subpatchmode>
@@ -340,12 +345,11 @@
       <NPresetEntries>32</NPresetEntries>
       <NModulationSources>0</NModulationSources>
       <NModulationTargetsPerSource>0</NModulationTargetsPerSource>
-      <Author></Author>
    </settings>
    <notes><![CDATA[]]></notes>
    <windowPos>
-      <x>580</x>
-      <y>214</y>
+      <x>298</x>
+      <y>138</y>
       <width>2196</width>
       <height>1017</height>
    </windowPos>
