@@ -24,7 +24,7 @@
    <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_1" x="1358" y="42">
       <params/>
       <attribs>
-         <combo attributeName="pin" selection="PB3"/>
+         <combo attributeName="pin" selection="PA5"/>
       </attribs>
    </obj>
    <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_9" x="784" y="84">
@@ -44,8 +44,30 @@
    <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_2" x="1358" y="112">
       <params/>
       <attribs>
-         <combo attributeName="pin" selection="PB4"/>
+         <combo attributeName="pin" selection="PA5"/>
       </attribs>
+   </obj>
+   <obj type="audio/inconfig l" uuid="7007d026acb7c3586f60a7f0898718d1ca7e0607" name="inconfig_1" x="1624" y="126">
+      <params/>
+      <attribs>
+         <combo attributeName="gain" selection="-12dB"/>
+         <combo attributeName="boost" selection="0dB"/>
+      </attribs>
+   </obj>
+   <obj type="audio/outconfig" uuid="eace67e3304afaa1bb695b444e9345f2d8adaf00" name="outconfig_1" x="1834" y="126">
+      <params/>
+      <attribs>
+         <combo attributeName="headphones" selection="-18dB"/>
+         <combo attributeName="mode" selection="Stereo"/>
+      </attribs>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_1" x="294" y="140">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_2" x="392" y="140">
+      <params/>
+      <attribs/>
    </obj>
    <obj type="math/*" uuid="922423f2db9f222aa3e5ba095778288c446da47a" name="*_3" x="1204" y="182">
       <params/>
@@ -54,7 +76,14 @@
    <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_3" x="1358" y="182">
       <params/>
       <attribs>
-         <combo attributeName="pin" selection="PB6"/>
+         <combo attributeName="pin" selection="PA6"/>
+      </attribs>
+   </obj>
+   <obj type="audio/inconfig r" uuid="8468fe7907553f335959a7f69cbc5a1f7b5d4d1d" name="inconfig_2" x="1624" y="196">
+      <params/>
+      <attribs>
+         <combo attributeName="gain" selection="-12dB"/>
+         <combo attributeName="boost" selection="0dB"/>
       </attribs>
    </obj>
    <obj type="ksoloti/gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac88" name="analog_4" x="28" y="238">
@@ -82,6 +111,17 @@
       </params>
       <attribs/>
    </obj>
+   <obj type="audio/in stereo" uuid="99848ad6d90a8e615e83b2e619cfc806f28e7281" name="in_1" x="1652" y="294">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="jaffa/mix/StMix2" uuid="9ecfec4e-65a5-4c42-b8f9-1a50c3eeea7e" name="obj_1" x="1848" y="294">
+      <params>
+         <frac32.u.map name="1 Gain" value="0.0"/>
+         <frac32.u.map name="2 Gain" value="30.0"/>
+      </params>
+      <attribs/>
+   </obj>
    <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_10" x="770" y="350">
       <params>
          <frac32.s.map name="pitch" value="-30.0"/>
@@ -91,19 +131,21 @@
    <obj type="ksoloti/gpio/in/digital" uuid="f59f139e8da912742832dc541157f20f30b7ac1c" name="digital_1" x="140" y="462">
       <params/>
       <attribs>
-         <combo attributeName="pin" selection="PB7"/>
-         <combo attributeName="mode" selection="hi-z"/>
+         <combo attributeName="pin" selection="PA9"/>
+         <combo attributeName="mode" selection="pulldown"/>
       </attribs>
-   </obj>
-   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_1" x="322" y="476">
-      <params/>
-      <attribs/>
    </obj>
    <obj type="ksoloti/gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac88" name="analog_3" x="770" y="504">
       <params/>
       <attribs>
          <combo attributeName="pin" selection="PA2"/>
       </attribs>
+   </obj>
+   <obj type="drj/audio/out_stereo_vol" uuid="awca1a567f535acc21055669829101d3ee7f0189" name="out_stereo_vol_1" x="1848" y="504">
+      <params>
+         <frac32.u.map name="volume" value="17.0"/>
+      </params>
+      <attribs/>
    </obj>
    <obj type="drj/midi/clock_tx" uuid="92a7e9ec6bae23a35b1204aa14c130af4b3a4793" name="clock_tx_1" x="1316" y="518">
       <params/>
@@ -117,15 +159,23 @@
       </params>
       <attribs/>
    </obj>
-   <obj type="disp/bool" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_2" x="322" y="560">
-      <params/>
+   <obj type="osc/brds/saw" uuid="ed06f020-7e68-4db6-836a-95a85e200cfb" name="saw_1" x="1498" y="532">
+      <params>
+         <frac32.s.map name="pitch" value="-6.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 1" uuid="e8f482af5b1ec4a2e9cf8ac7ce09e7c0e43cea08" name="mix_1" x="1652" y="546">
+      <params>
+         <frac32.u.map name="gain1" value="29.5"/>
+      </params>
       <attribs/>
    </obj>
    <obj type="ksoloti/gpio/in/digital" uuid="f59f139e8da912742832dc541157f20f30b7ac1c" name="digital_2" x="154" y="574">
       <params/>
       <attribs>
          <combo attributeName="pin" selection="PC1"/>
-         <combo attributeName="mode" selection="hi-z"/>
+         <combo attributeName="mode" selection="pulldown"/>
       </attribs>
    </obj>
    <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_11" x="770" y="574">
@@ -146,15 +196,27 @@
          <combo attributeName="pin" selection="PB7"/>
       </attribs>
    </obj>
+   <obj type="osc/sine" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="1498" y="630">
+      <params>
+         <frac32.s.map name="pitch" value="6.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 1" uuid="e8f482af5b1ec4a2e9cf8ac7ce09e7c0e43cea08" name="mix_2" x="1652" y="644">
+      <params>
+         <frac32.u.map name="gain1" value="27.0"/>
+      </params>
+      <attribs/>
+   </obj>
    <obj type="midi/intern/clock" uuid="7f6f35e92d2c29e950af2b3af5cebb2e9e3b778c" name="clock_2" x="1148" y="672">
       <params>
-         <frac32.u.map name="bpm" value="32.5"/>
+         <frac32.u.map name="bpm" value="60.0"/>
       </params>
       <attribs/>
    </obj>
    <obj type="midi/out/clock" uuid="12b916e835bb6fc9fa4f2c858d1d1a72d5cf6d08" name="clock_1" x="1316" y="700">
       <params>
-         <frac32.u.map name="bpm" value="28.0"/>
+         <frac32.u.map name="bpm" value="27.5"/>
       </params>
       <attribs>
          <combo attributeName="device" selection="din"/>
@@ -163,7 +225,7 @@
    <obj type="ksoloti/gpio/out/pwm" uuid="63fd46da-dcdc-4206-b460-90075711c994" name="pwm_4" x="616" y="714">
       <params/>
       <attribs>
-         <combo attributeName="pin" selection="PB8"/>
+         <combo attributeName="pin" selection="PC7"/>
       </attribs>
    </obj>
    <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_8" x="434" y="756">
@@ -234,15 +296,57 @@
          <dest obj="clock_1" inlet="run"/>
          <dest obj="clock_2" inlet="run"/>
       </net>
+      <net>
+         <source obj="saw_1" outlet="wave"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="sine_1" outlet="wave"/>
+         <dest obj="mix_2" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="in_1" outlet="left"/>
+         <dest obj="obj_1" inlet="1L"/>
+      </net>
+      <net>
+         <source obj="in_1" outlet="right"/>
+         <dest obj="obj_1" inlet="1R"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="L Out"/>
+         <dest obj="out_stereo_vol_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="R Out"/>
+         <dest obj="out_stereo_vol_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="obj_1" inlet="2L"/>
+      </net>
+      <net>
+         <source obj="mix_2" outlet="out"/>
+         <dest obj="obj_1" inlet="2R"/>
+      </net>
+      <net>
+         <source obj="digital_1" outlet="out"/>
+         <dest obj="bool_1" inlet="in"/>
+      </net>
    </nets>
    <settings>
-      <subpatchmode>no</subpatchmode>
+      <subpatchmode>polychannel</subpatchmode>
+      <MidiChannel>1</MidiChannel>
+      <NPresets>8</NPresets>
+      <NPresetEntries>32</NPresetEntries>
+      <NModulationSources>0</NModulationSources>
+      <NModulationTargetsPerSource>0</NModulationTargetsPerSource>
+      <Author></Author>
    </settings>
    <notes><![CDATA[]]></notes>
    <windowPos>
-      <x>830</x>
-      <y>164</y>
-      <width>1765</width>
+      <x>580</x>
+      <y>214</y>
+      <width>2196</width>
       <height>1017</height>
    </windowPos>
 </patch-1.0>
