@@ -90,6 +90,19 @@
          <combo attributeName="boost" selection="0dB"/>
       </attribs>
    </obj>
+   <obj type="jaffa/mix/StMix2" uuid="9ecfec4e-65a5-4c42-b8f9-1a50c3eeea7e" name="obj_1" x="1904" y="224">
+      <params>
+         <frac32.u.map name="1 Gain" value="31.5"/>
+         <frac32.u.map name="2 Gain" value="30.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="drj/audio/out_stereo_vol" uuid="awca1a567f535acc21055669829101d3ee7f0189" name="out_stereo_vol_1" x="2002" y="224">
+      <params>
+         <frac32.u.map name="volume" value="56.5"/>
+      </params>
+      <attribs/>
+   </obj>
    <obj type="ksoloti/gpio/in/analog" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac88" name="analog_4" x="28" y="238">
       <params/>
       <attribs>
@@ -119,17 +132,14 @@
       <params/>
       <attribs/>
    </obj>
-   <obj type="jaffa/mix/StMix2" uuid="9ecfec4e-65a5-4c42-b8f9-1a50c3eeea7e" name="obj_1" x="1848" y="294">
-      <params>
-         <frac32.u.map name="1 Gain" value="0.0"/>
-         <frac32.u.map name="2 Gain" value="30.0"/>
-      </params>
-      <attribs/>
-   </obj>
    <obj type="lfo/sine r" uuid="725d481acbefa181fa5d92f414d317c86b77b789" name="sine_10" x="770" y="350">
       <params>
          <frac32.s.map name="pitch" value="-30.0"/>
       </params>
+      <attribs/>
+   </obj>
+   <obj type="jaffa/disp/Vu4" uuid="faf65306-1769-418a-815e-ac7926c57d8f" name="Vu4_1" x="1918" y="420">
+      <params/>
       <attribs/>
    </obj>
    <obj type="ksoloti/gpio/in/digital" uuid="f59f139e8da912742832dc541157f20f30b7ac1c" name="digital_1" x="140" y="462">
@@ -145,9 +155,9 @@
          <combo attributeName="pin" selection="PA2"/>
       </attribs>
    </obj>
-   <obj type="drj/audio/out_stereo_vol" uuid="awca1a567f535acc21055669829101d3ee7f0189" name="out_stereo_vol_1" x="1848" y="504">
+   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="toggle_1" x="1176" y="518">
       <params>
-         <frac32.u.map name="volume" value="17.0"/>
+         <bool32.tgl name="b" value="1"/>
       </params>
       <attribs/>
    </obj>
@@ -157,12 +167,6 @@
          <combo attributeName="device" selection="din"/>
       </attribs>
    </obj>
-   <obj type="ctrl/toggle" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="toggle_1" x="1190" y="532">
-      <params>
-         <bool32.tgl name="b" value="1"/>
-      </params>
-      <attribs/>
-   </obj>
    <obj type="osc/brds/saw" uuid="ed06f020-7e68-4db6-836a-95a85e200cfb" name="saw_1" x="1498" y="532">
       <params>
          <frac32.s.map name="pitch" value="-6.0"/>
@@ -171,7 +175,7 @@
    </obj>
    <obj type="mix/mix 1" uuid="e8f482af5b1ec4a2e9cf8ac7ce09e7c0e43cea08" name="mix_1" x="1652" y="546">
       <params>
-         <frac32.u.map name="gain1" value="29.5"/>
+         <frac32.u.map name="gain1" value="64.0"/>
       </params>
       <attribs/>
    </obj>
@@ -208,7 +212,7 @@
    </obj>
    <obj type="mix/mix 1" uuid="e8f482af5b1ec4a2e9cf8ac7ce09e7c0e43cea08" name="mix_2" x="1652" y="644">
       <params>
-         <frac32.u.map name="gain1" value="27.0"/>
+         <frac32.u.map name="gain1" value="64.0"/>
       </params>
       <attribs/>
    </obj>
@@ -307,10 +311,12 @@
       <net>
          <source obj="in_1" outlet="left"/>
          <dest obj="obj_1" inlet="1L"/>
+         <dest obj="Vu4_1" inlet="1"/>
       </net>
       <net>
          <source obj="in_1" outlet="right"/>
          <dest obj="obj_1" inlet="1R"/>
+         <dest obj="Vu4_1" inlet="2"/>
       </net>
       <net>
          <source obj="obj_1" outlet="L Out"/>
@@ -323,10 +329,12 @@
       <net>
          <source obj="mix_1" outlet="out"/>
          <dest obj="obj_1" inlet="2L"/>
+         <dest obj="Vu4_1" inlet="3"/>
       </net>
       <net>
          <source obj="mix_2" outlet="out"/>
          <dest obj="obj_1" inlet="2R"/>
+         <dest obj="Vu4_1" inlet="4"/>
       </net>
       <net>
          <source obj="digital_1" outlet="out"/>
