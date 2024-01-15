@@ -56,7 +56,26 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "starved_thermal|120477678|48937000|58d2e517-e365-4f89-93a8-b5d24462f9e8|872671aa-bc06-4b4b-84cf-bb19af9bb2cb|B.Cu",
+        "starved_thermal|122594100|51053422|58d2e517-e365-4f89-93a8-b5d24462f9e8|b4001956-f800-49ab-983d-649240cb14a9|B.Cu",
+        "starved_thermal|124710522|48937000|58d2e517-e365-4f89-93a8-b5d24462f9e8|5343691d-da8e-4887-9758-fb9946269a13|B.Cu",
+        "starved_thermal|140477678|130937000|58d2e517-e365-4f89-93a8-b5d24462f9e8|3f70568a-c108-44a8-87ba-5ba2eacd4ea8|B.Cu",
+        "starved_thermal|142594100|128820578|58d2e517-e365-4f89-93a8-b5d24462f9e8|fbf471cf-c915-44a6-a2e1-91bf41b753d6|B.Cu",
+        "starved_thermal|142594100|133053422|58d2e517-e365-4f89-93a8-b5d24462f9e8|5d14c8b5-965f-4720-803c-67799509c6a1|B.Cu",
+        "starved_thermal|144710522|130937000|58d2e517-e365-4f89-93a8-b5d24462f9e8|f67caafb-60ff-40af-835b-302a2b4242cb|B.Cu",
+        "starved_thermal|172477678|130937000|58d2e517-e365-4f89-93a8-b5d24462f9e8|ecf8fda5-a7e8-4d38-a84d-2e27054237c6|B.Cu",
+        "starved_thermal|174594100|128820578|58d2e517-e365-4f89-93a8-b5d24462f9e8|2efba8a6-54ab-4332-92d6-9ecd9d6541f6|B.Cu",
+        "starved_thermal|174594100|133053422|58d2e517-e365-4f89-93a8-b5d24462f9e8|dfd91298-ebf1-461f-93e8-2e7cd803da24|B.Cu",
+        "starved_thermal|176710522|130937000|58d2e517-e365-4f89-93a8-b5d24462f9e8|c87ea7a6-52bc-4566-9b4d-7563911ace5a|B.Cu",
+        "unconnected_items|124464100|63727000|19ca5860-fb36-490c-b5cf-aaca350b0694|e2ba0fb3-b8c1-495d-a76b-3fc6f5fb24a0",
+        "unconnected_items|124464100|68807000|38d8291b-d4fe-4621-b173-e002efb67890|c7dad20a-cc60-474b-a5a2-6ddc51d0ce3c",
+        "unconnected_items|124464100|71347000|e2ba0fb3-b8c1-495d-a76b-3fc6f5fb24a0|0a6b226c-1ed1-4952-b0f6-c93dcab99b77",
+        "unconnected_items|127004100|63727000|1b6c6110-3447-4afb-866d-9e1dbe318d5b|19ca5860-fb36-490c-b5cf-aaca350b0694",
+        "unconnected_items|127004100|68807000|c7dad20a-cc60-474b-a5a2-6ddc51d0ce3c|90ac7bf8-321c-487d-8f23-ea16d886ae8f",
+        "unconnected_items|170184100|68807000|e61c3390-a2f9-4aa6-ba45-f24570a7e2e7|58d2e517-e365-4f89-93a8-b5d24462f9e8",
+        "unconnected_items|172724100|66267000|123c4ee9-b30f-4d25-ae50-2edaf3f0e759|90ac7bf8-321c-487d-8f23-ea16d886ae8f"
+      ],
       "meta": {
         "version": 2
       },
