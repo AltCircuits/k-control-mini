@@ -12,7 +12,7 @@ Features:
 
 ![k-contorl-min](k-control-mini.png)
 ![k-control-mini2](k-control-mini2.png)
-![k-control-mini3](k-control-mini3.jpgi)
+![k-control-mini3](k-control-mini3.jpg)
 
 ---
 Ksoloti is based on the Axoloti by Johannes Taelman (johannes.taelman@gmail.com)
